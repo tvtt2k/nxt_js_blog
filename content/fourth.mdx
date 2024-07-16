@@ -1,0 +1,44 @@
+---
+title: Understanding MEV
+description: A beginner's guide to Miner Extractable Value in cryptocurrency
+date: "2024-02-07"
+tags:
+  - cryptocurrency
+  - blockchain
+  - MEV
+---
+
+# Miner Extractable Value (MEV)
+
+As cryptocurrency becomes more prevalent, certain loopholes like MEV must be addressed to ensure broader adoption. MEV refers to the profit miners can make by manipulating transaction orders in a blockchain. Initially identified in Proof of Work (PoW) consensus, MEV also affects Proof of Stake (PoS) systems, where it is known as Maximum Extractable Value.
+
+## Understanding MEV
+
+MEV occurs when miners exploit the order of transactions in the mempool. For example, if a user submits a transaction with an arbitrage opportunity, a malicious miner can front-run by placing a similar transaction ahead, thus profiting at the user's expense. This issue is also prevalent in decentralized exchanges (DEXs), where bots exploit typographical errors or transaction delays to gain profits.
+
+## Front-Running and Bot Exploits
+
+Front-running involves executing a transaction ahead of a user's intended transaction to gain a profit. Bots are commonly used to automate this process, paying higher gas fees to prioritize their transactions. This practice is known as a "sandwich attack" where bots buy assets before a user's transaction and sell them immediately after at a higher price.
+
+## The Problem with Ethereum’s "Replace by Fee"
+
+Ethereum's "Replace by Fee" mechanism is exploited by bots competing for the same arbitrage opportunities, leading to increased gas fees and inefficient transaction processing. The faster bot with better internet connectivity often wins, resulting in "latency wars" and centralization pressures.
+
+## MEV in NFTs
+
+MEV techniques are also applied to NFTs, where bots front-run popular drops to secure valuable assets first. This practice was notably observed in the purchase of a CryptoPunk NFT for $7 million.
+
+## The Impact of MEV
+
+While MEV can increase system robustness by promoting engagement and high transaction volumes, it poses significant risks. Centralization of block builders and increased likelihood of missed blocks are major concerns. These issues threaten the decentralized nature of blockchain networks and their adoption.
+
+## Possible Solutions
+
+To mitigate MEV, resilient components and correct tooling for decentralized finance (DeFi) are essential. Proposed solutions include:
+
+- **Batch Auctions**: Executing all trades within a batch simultaneously to ensure fair pricing.
+- **Flashbots**: A layer that allows users to send private transactions directly to miners, avoiding the public mempool and reducing front-running opportunities.
+
+## Conclusion
+
+MEV poses a significant challenge to the adoption of Ethereum and other blockchain networks. Continuous research and community collaboration are crucial to developing solutions that ensure decentralized, efficient, and fair transactions.
